@@ -1,5 +1,4 @@
-import { Tab, Tabs, TabList, TabPanels, TabPanel, Heading } from '@chakra-ui/react';
-import CamCards from './CamCards.tsx'
+import { Tab, Tabs, TabList, Heading } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 
 
