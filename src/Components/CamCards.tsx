@@ -19,7 +19,7 @@ const VideoCard: React.FC<{ src: string; title: string }> = ({ src, title }) => 
 
   return (
     <Box width="100%" position="relative" >
-      <Badge fontSize='1em' variant='outline' colorScheme='teal'>{title}</Badge>
+      <Badge margin= '2' fontSize='1em' variant='outline' colorScheme='teal'>{title}</Badge>
       <video
         ref={videoRef}
         controls
@@ -33,7 +33,7 @@ const VideoCard: React.FC<{ src: string; title: string }> = ({ src, title }) => 
 
 export default function CamCards() {
   return (
-    <SimpleGrid spacing={4} templateColumns="repeat(auto-fill)">
+    <SimpleGrid spacing={25} templateColumns="repeat(auto-fill)">
       <VideoCard src={hightower} title="Hightower" />
       <VideoCard src={pelican} title="Pelican" />
       <VideoCard src={inlet} title="Inlet" />
