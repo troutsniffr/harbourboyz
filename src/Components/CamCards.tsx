@@ -19,6 +19,7 @@ const VideoCard: React.FC<{ src: string; title: string }> = ({ src, title }) => 
 
   return (
     <Box width="100%" position="relative" >
+      <Badge fontSize='1em' variant='outline' colorScheme='teal'>{title}</Badge>
       <video
         ref={videoRef}
         controls
@@ -33,13 +34,9 @@ const VideoCard: React.FC<{ src: string; title: string }> = ({ src, title }) => 
 export default function CamCards() {
   return (
     <SimpleGrid spacing={4} templateColumns="repeat(auto-fill)">
-      <Badge variant='outline' colorScheme='teal'>Hightower</Badge>
       <VideoCard src={hightower} title="Hightower" />
-      <Badge variant='outline' colorScheme='teal'>Pelican</Badge>
       <VideoCard src={pelican} title="Pelican" />
-      <Badge variant='outline' colorScheme='teal'>Inlet</Badge>
       <VideoCard src={inlet} title="Inlet" />
-      <Badge variant='outline' colorScheme='teal'>16th Street</Badge>
       <VideoCard src={sixteenth} title="16th Street" />
     </SimpleGrid>
   );
