@@ -1,0 +1,11 @@
+body {
+    background-color: #242424 !important;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+  }
+
+cardbody {
+background-color: #4e4e4e !important;
+color-scheme: light dark;
+color: rgba(255, 255, 255, 0.87);
+}
