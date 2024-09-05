@@ -21,7 +21,7 @@ export default function Home() {
       >
         <SwiperSlide>
           <img 
-            src="src/assets/rags.png" 
+            src="/rags.png" 
             alt="Slide 1" 
             style={{ 
               width: '100%', 
@@ -33,7 +33,7 @@ export default function Home() {
         </SwiperSlide>
         <SwiperSlide>
           <img 
-            src="src/assets/shirts.png" 
+            src="/shirts.png" 
             alt="Slide 2" 
             style={{ 
               width: '100%', 
@@ -45,7 +45,7 @@ export default function Home() {
         </SwiperSlide>
         <SwiperSlide>
           <img 
-            src="src/assets/rapsnacks.png" 
+            src="/rapsnacks.png" 
             alt="Slide 2" 
             style={{ 
               width: '100%', 
@@ -57,7 +57,7 @@ export default function Home() {
         </SwiperSlide>
         <SwiperSlide>
           <img 
-            src="src/assets/prerico.png" 
+            src="/prerico.png" 
             alt="Slide 4" 
             style={{ 
               width: '100%', 
@@ -69,7 +69,7 @@ export default function Home() {
         </SwiperSlide>
         <SwiperSlide>
           <img 
-            src="src/assets/edog.png" 
+            src="/edog.png" 
             alt="Slide 5" 
             style={{ 
               width: '100%', 
