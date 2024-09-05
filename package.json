@@ -19,7 +19,7 @@
     "ngrok": "^5.0.0-beta.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-hls-player": "^3.0.7",
+    "react-hls-player": "latest",
     "video.js": "^8.17.3",
     "videojs-contrib-quality-levels": "^4.1.0"
   },
