@@ -1,19 +1,18 @@
 import React, { useRef, useEffect } from 'react';
 import { hightower, pelican, inlet, sixteenth } from '../assets/cams.tsx';
 import { SimpleGrid, Box, Badge } from '@chakra-ui/react';
-import Hls from 'hls.js'; // 'Hls' instead of 'hls'
+import Hls from 'hls.js';
 import './CamCards.css';
 
-const VideoCard = ({ src, title }) => {
-  const videoRef = useRef(null);
+const VideoCard: React.FC<{ src: string; title: string }> = ({ src, title }) => {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
 
   useEffect(() => {
     if (videoRef.current && Hls.isSupported()) {
       const hls = new Hls();
       hls.loadSource(src);
       hls.attachMedia(videoRef.current);
-    } else if (videoRef.current.canPlayType('application/vnd.apple.mpegurl')) {
-      // For Safari and native HLS support
+    } else if (videoRef.current?.canPlayType('application/vnd.apple.mpegurl')) {
       videoRef.current.src = src;
     }
   }, [src]);
