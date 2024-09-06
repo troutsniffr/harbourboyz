@@ -4,12 +4,18 @@ import 'swiper/css';
 import 'swiper/css/navigation'; // if you're using navigation features
 import { Navigation } from 'swiper/modules';
 import './Home.css';
+import TideChart from './TideChart';
+import BuoyData from './BuoyData';
+
 
 
 
 
 export default function Home() {
   return (
+    <>
+    <BuoyData />
+    <TideChart />
     <Box width="100%" maxWidth="1200px" margin="0 auto" height="auto" marginTop="4em">
       <Swiper
         modules={[Navigation]}
@@ -81,6 +87,7 @@ export default function Home() {
         </SwiperSlide>
       </Swiper>
     </Box>
+    </>
   );
 }
 
