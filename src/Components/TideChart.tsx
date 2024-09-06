@@ -70,7 +70,7 @@ const TideChart: React.FC = () => {
     ],
   };
 
-  const options = {
+  const options: any = {
     scales: {
       x: {
         type: 'time' as const,
