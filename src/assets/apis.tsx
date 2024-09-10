@@ -22,9 +22,16 @@ export const fetchTideDataForToday = async () => {
   };
   
   export const fetchSunriseSunset = async () => {
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = String(today.getMonth() + 1).padStart(2, '0');
+    const day = String(today.getDate()).padStart(2, '0');
+
+    const begin_date = `${year}${month}${day}`;
+    
     const lat = 28.1483; // Indian Harbour Beach, FL latitude
     const lng = -80.5887; // Indian Harbour Beach, FL longitude
-    const url = `https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lng}&date=2024-09-06&formatted=0`;
+    const url = `https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lng}&date=${begin_date}&formatted=0`;
   
     try {
       const response = await fetch(url);

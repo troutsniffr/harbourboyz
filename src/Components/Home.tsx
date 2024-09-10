@@ -1,8 +1,8 @@
-import { Box } from '@chakra-ui/react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation'; // if you're using navigation features
-import { Navigation } from 'swiper/modules';
+// import { Box } from '@chakra-ui/react';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import 'swiper/css';
+// import 'swiper/css/navigation'; // if you're using navigation features
+// import { Navigation } from 'swiper/modules';
 import './Home.css';
 import TideChart from './TideChart';
 import BuoyData from './BuoyData';
@@ -16,7 +16,7 @@ export default function Home() {
     <>
     <BuoyData />
     <TideChart />
-    <Box width="100%" maxWidth="1200px" margin="0 auto" height="auto" marginTop="4em">
+    {/* <Box width="100%" maxWidth="1200px" margin="0 auto" height="auto" marginTop="4em">
       <Swiper
         modules={[Navigation]}
         navigation
@@ -86,7 +86,7 @@ export default function Home() {
           />
         </SwiperSlide>
       </Swiper>
-    </Box>
+    </Box> */}
     </>
   );
 }

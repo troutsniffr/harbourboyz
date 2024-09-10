@@ -79,6 +79,8 @@ const TideChart: React.FC = () => {
           stepSize: 6,
           tooltipFormat: 'MMM d, h:mm a',
         },
+        min: new Date().setHours(0, 0, 0, 0), // Midnight of today
+        max: new Date().setHours(23, 59, 59, 999), // 11:59:59 PM of today
         ticks: {
           source: 'auto',
           autoSkip: true,
