@@ -29,7 +29,6 @@ const TideChart: React.FC = () => {
           return tideTime >= getStartOfDay() && tideTime <= getEndOfDay();
         });
 
-        console.log('Filtered Tide Data:', todayTideData);
         setTideTimes(todayTideData.map((item: any) => new Date(item.t)));
         setTideHeights(todayTideData.map((item: any) => parseFloat(item.v)));
       }

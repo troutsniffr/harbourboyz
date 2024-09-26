@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { hightower, pelican, inlet, sixteenth } from '../assets/cams.tsx';
+import { hightower, pelican, inlet, sixteenth, navarre } from '../assets/cams.tsx';
 import { SimpleGrid, Box, Badge } from '@chakra-ui/react';
 import Hls from 'hls.js';
 import './CamCards.css';
@@ -38,6 +38,7 @@ export default function CamCards() {
       <VideoCard src={pelican} title="Pelican" />
       <VideoCard src={inlet} title="Inlet" />
       <VideoCard src={sixteenth} title="16th Street" />
+      <VideoCard src={navarre} title="Navarre Pier" />
     </SimpleGrid>
   );
 }
