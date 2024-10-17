@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { oceanave, inlet, inletov } from '../assets/cams.tsx';
+import { oceanave, inletov } from '../assets/cams.tsx';
 import { SimpleGrid, Box, Badge } from '@chakra-ui/react';
 import Hls from 'hls.js';
 import './CamCards.css';
