@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { hightower, pelican, indialanticn, indialantic } from '../assets/cams.tsx';
+import { oceanave, inlet, inletov } from '../assets/cams.tsx';
 import { SimpleGrid, Box, Badge } from '@chakra-ui/react';
 import Hls from 'hls.js';
 import './CamCards.css';
@@ -31,13 +31,12 @@ const VideoCard: React.FC<{ src: string; title: string }> = ({ src, title }) => 
   );
 };
 
-export default function CamCards() {
+export default function SouthCamCard() {
   return (
     <SimpleGrid spacing={25} templateColumns="repeat(auto-fill)">
-      <VideoCard src={hightower} title="Hightower" />
-      <VideoCard src={pelican} title="Pelican" />
-      <VideoCard src={indialanticn} title="Indialantic N" />
-      <VideoCard src={indialantic} title="Indialantic" />
+      <VideoCard src={oceanave} title="Ocean Ave" />
+      {/* <VideoCard src={inlet} title="Inlet" /> */}
+      <VideoCard src={inletov} title="Inlet OV" />
     </SimpleGrid>
   );
 }

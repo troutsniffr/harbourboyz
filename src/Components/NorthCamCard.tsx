@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { hightower, pelican, indialanticn, indialantic } from '../assets/cams.tsx';
+import {  pier, pierov, loriwilsonn, loriwilsons, hilton, sixteenth } from '../assets/cams.tsx';
 import { SimpleGrid, Box, Badge } from '@chakra-ui/react';
 import Hls from 'hls.js';
 import './CamCards.css';
@@ -31,13 +31,15 @@ const VideoCard: React.FC<{ src: string; title: string }> = ({ src, title }) => 
   );
 };
 
-export default function CamCards() {
+export default function NorthCamCard() {
   return (
     <SimpleGrid spacing={25} templateColumns="repeat(auto-fill)">
-      <VideoCard src={hightower} title="Hightower" />
-      <VideoCard src={pelican} title="Pelican" />
-      <VideoCard src={indialanticn} title="Indialantic N" />
-      <VideoCard src={indialantic} title="Indialantic" />
+      <VideoCard src={pier} title="Pier" />
+      <VideoCard src={pierov} title="Pier OV" />
+      <VideoCard src={loriwilsonn} title="Lori Wilson N" />
+      <VideoCard src={loriwilsons} title="Lori Wilson S" />
+      <VideoCard src={hilton} title="Hilton" />
+      <VideoCard src={sixteenth} title="16th Street" />
     </SimpleGrid>
   );
 }
